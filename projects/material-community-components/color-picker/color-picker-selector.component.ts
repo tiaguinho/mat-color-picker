@@ -702,8 +702,8 @@ export class MccColorPickerSelectorComponent implements AfterViewInit, OnInit, O
       const color = this._selectedColor.clone().setAlpha(alpha);
       this._updateRGBAForm(color);
       this._updateHexForm(color);
-      this._tmpSelectedColor.next(color);
       this.noColor = false;
+      this._tmpSelectedColor.next(color);
     }
   }
 
@@ -722,8 +722,8 @@ export class MccColorPickerSelectorComponent implements AfterViewInit, OnInit, O
       if (this.colorPickerCollectionService.alpha) {
         this._drawAlphaSelector(color);
       }
-      this._tmpSelectedColor.next(color);
       this.noColor = false;
+      this._tmpSelectedColor.next(color);
     }
   }
 
